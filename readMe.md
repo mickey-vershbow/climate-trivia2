@@ -16,10 +16,6 @@ SEI Jedi Unit 1 / Project 1
 
 This is a basic two-player trivia game. If a player gets a question right, they get a point. If they get a question wrong, they get no points. After each turn, the player turn switch is toggled. There is no winning or losing yet, the game will just go on and on.
 
-### Wireframes
-
-### Screenshots
-
 ### Future Goals
 
 - Old questions/answers fade out and new questions/answers fade in when the board is reset.
