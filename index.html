@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Shoelace Framework -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.28/dist/themes/base.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.28/dist/all.shoelace.js"
+    ></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Inknut+Antiqua:wght@500&family=Space+Grotesk:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Mickey stylesheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Climate Change Trivia</title>
+  </head>
+  <body>
+    <h1>CLIMATE CHANGE TRIVIA</h1>
+
+    <div class="dropdown-menu">
+      <sl-dropdown>
+        <sl-button slot="trigger" caret>Menu</sl-button>
+        <sl-menu>
+          <sl-menu-item value="restart">Restart Game</sl-menu-item>
+          <sl-menu-item value="reading">Extracurricular Reading</sl-menu-item>
+          <sl-menu-item value="action">Things You Can Do</sl-menu-item>
+          <sl-menu-divider></sl-menu-divider>
+          <sl-menu-item checked>Sound EFX</sl-menu-item>
+          <sl-menu-item disabled>Disabled</sl-menu-item>
+        </sl-menu>
+      </sl-dropdown>
+    </div>
+
+    <div id="question">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ad
+      tenetur ipsum, expedita quibusdam quasi non deserunt voluptas, ipsa sequi
+      cum odio molestiae harum totam dolores! Quidem sint earum tenetur.
+    </div>
+    <div id="answer">
+      <ul>
+        <li id="a">Answer A</li>
+        <li id="b">Answer B</li>
+        <li id="c">Answer C</li>
+        <li id="d">Answer D</li>
+        <li id="e">Answer E</li>
+      </ul>
+    </div>
+    <div id="correct-answer">
+      <p></p>
+    </div>
+
+    <sl-button id="nextQuestion">Next Question</sl-button>
+
+    <div id="scores">
+      <div id="player1">
+        <h3>Player 1</h3>
+        <h4>0</h4>
+      </div>
+      <div id="player2">
+        <h3>Player 2</h3>
+        <h4>0</h4>
+      </div>
+    </div>
+  </body>
+</html>
